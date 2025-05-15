@@ -1,7 +1,7 @@
 import { AptosClient } from 'aptos';
 
-const MODULE_ADDRESS = '0x0b7a16c68e2f64116b019549867600d23fdab3c660b2a0b5eac5c232ce6d891d';
-const MODULE_NAME = 'message_board';
+const MODULE_ADDRESS = '0x0726ea2567b15ba4d1e62a379a677ba2cacab96401dd8b187486fe3a97057b70';
+const MODULE_NAME = 'escrow';
 
 export class ContractService {
   constructor(private client: AptosClient) {}
@@ -15,7 +15,7 @@ export class ContractService {
     try {
       const payload = {
         type: 'entry_function_payload',
-        function: `${MODULE_ADDRESS}::${MODULE_NAME}::post_message`,
+        function: `${MODULE_ADDRESS}::${MODULE_NAME}::create_escrow`,
         type_arguments: [],
         arguments: [contractor, amount, durationHours],
       };
