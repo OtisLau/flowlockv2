@@ -1,10 +1,10 @@
 [package]
-name = "MessageBoard"
+name = "Escrow"
 version = "1.0.0"
 authors = []
 
 [addresses]
-message_board_addr = "_"
+message_board_addr = "0x20affb799cf433a87ef9919ab9a27cafdd41ac1f2a0012781794f378d646b450"
 
 [dependencies]
 AptosFramework = { git = "https://github.com/aptos-labs/aptos-framework.git", rev = "mainnet", subdir = "aptos-framework" }
